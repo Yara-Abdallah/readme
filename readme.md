@@ -13,10 +13,8 @@ records, saving you time and ensuring data accuracy.
   - [Getting Started](#getting-started)
     - [Installation](#installation)
     - [Usage](#usage)
-  - [Documentation](#documentation)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgements](#acknowledgements)
+  - [API Documentation](#api documentation)
+
 
 
 ## Features
@@ -84,9 +82,44 @@ Provide instructions on how to get the project up and running on the user's loca
 - Werkzeug==3.0.1
 - XlsxWriter==3.1.9
 
+
+## API Documentation
+
+#### Correct Document
+
+
+**Method:** POST.
+
+
+**Usage:** upload ERP xlsx file.
+
+
+**URL:** /upload_erp_excel
+
+**Example request body:** 
+```
+{
+    "file": click button [Choose File] to upload xlsx file 
+}
+```
+**Success response:**
+
+```
+
+{
+  "message": "File uploaded successfully",
+  "success": true
+}
+```
+
+
 ## usage
 
-1- run
+1- upload erp file 
+```
+python app.py
+```
+2- run project to get the final results
 ```
 python main.py
 ```
